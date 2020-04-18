@@ -9,8 +9,7 @@ dnota = 0
 while xnota < 5:
     while True:
         try:
-            print(f"Ingrese nota {xnota+1}: ", end="")
-            notas[xnota] = int(input())
+            notas[xnota] = int(input(f"Ingrese nota {xnota+1}: "))
             break
         except ValueError:
             print('Debe ingresar un número. Intente nuevamente...')
